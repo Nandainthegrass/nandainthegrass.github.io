@@ -1,0 +1,62 @@
+:root {
+  --viridian: #000000;
+  --bistre: #ffffff;
+  
+  --ivory: #FFFEEC;
+  --indigo: #A88AED;
+  --pear: #CBD83B;
+  --sunset: #FFCB82;
+  --naples: #FFE16D;
+  --gunmetal: #253E4C;
+}
+
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  background-color: var(--ivory); 
+  color: var(--gunmetal);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#screen {
+  border-radius: 1.5rem;
+  height: 396px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-text {
+  color: var(--bistre);
+  margin: 0;
+}
+
+#screen-text-h1 {
+  font-size: 10rem;
+  background-image: url('./assets/starrysky.jpg');
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#screen-text-p {
+  font-size: 3rem;
+  color: var(--gunmetal);
+}
