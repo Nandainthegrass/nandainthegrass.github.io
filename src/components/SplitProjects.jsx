@@ -62,6 +62,7 @@ export default function SplitProjects () {
 
 const styles = {
   projectsText: {
-    fontFamily: "'Inria Sans', sans-serif"
+    fontFamily: "'Inria Sans', sans-serif",
+    fontSize: "64px",
   }
 };

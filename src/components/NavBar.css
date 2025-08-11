@@ -10,6 +10,10 @@
   background-color: #05C405;
 }
 
+#resume-button-container:hover #resume-btn {
+  color: #05C405;
+}
+
 #resume-green-box {
   height: 12px;
   background-color: #404040;

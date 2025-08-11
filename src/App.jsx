@@ -9,6 +9,8 @@ import NavBar from "./components/NavBar"
 import SplitProjects from "./components/SplitProjects";
 import Bulb from "./components/Bulb";
 import { useState } from "react";
+import Screen from "./components/Screen";
+import './App.css';
 
 
 function App() {
@@ -19,8 +21,11 @@ function App() {
     <>
       <div>
         <Bulb onComplete={()=> setShowProjects(true)} />
-         <NavBar/>
-         <SplitProjects/>
+         <NavBar />
+         <div id="container-body">
+           <Screen />
+           <SplitProjects />
+         </div>
       </div>
     </>
   )

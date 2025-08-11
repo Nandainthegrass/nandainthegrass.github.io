@@ -12,7 +12,15 @@ export default function NavBar () {
               <h1 style={styles.logo}>NANDA'S</h1>
               <OptionSwitcher/>
             </div>
-            <div id="resume-button-container">
+            <div id="resume-button-container" 
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/resume.pdf";
+                link.download = "Nanda-Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}>
               <div id="resume-green-box"></div>
               <span id="resume-btn" style={styles.resumeBtn}>Resume</span>
             </div>
