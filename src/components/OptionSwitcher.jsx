@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTheme } from "./contexts/ThemeContext";
+import './OptionSwitcher.css';
 
 export default function OptionSwitcher () {
 
@@ -7,11 +8,11 @@ export default function OptionSwitcher () {
 
   return (
     <div style={styles.container}>
-      <span onClick={prevSeason} style={styles.arrow}>
+      <span onClick={prevSeason} style={styles.arrow} className="arrow">
         &lt;
       </span>
-      <span style={styles.option}>{season}</span>
-      <span onClick={nextSeason} style={styles.arrow}>
+      <span style={styles.option}><i>{season}</i></span>
+      <span onClick={nextSeason} style={styles.arrow} className="arrow">
         &gt;
       </span>
     </div>
@@ -20,17 +21,20 @@ export default function OptionSwitcher () {
 
 const styles = {
   container: {
-    fontSize: "18px",
-    fontFamily: "sans-serif",
+    fontSize: "24px",
+    fontFamily: "'Inria Sans', sans-serif",
     display: "flex",
     alignItems: "center",
-    userSelect: "none"
+    userSelect: "none",
+    placeSelf: "center",
+    fontWeight: "700",
+    marginTop: "0.7rem",
   },
   arrow: {
     cursor: "pointer",
   },
   option: {
-    minWidth: "100px",
+    minWidth: "120px",
     textAlign: "center",
   },
 };

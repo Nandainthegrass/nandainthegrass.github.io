@@ -1,0 +1,31 @@
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 3rem;
+  position: relative;
+}
+
+.pro, .jects {
+  display: inline-block;
+}
+
+.middle-divs {
+  display: flex;
+  gap: 10px;
+  width: 0;
+  overflow: hidden;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  border-radius: 8px;
+}
